@@ -5,6 +5,10 @@
 npm install
 ```
 
+Setup Debugger in VS code: https://vuejs.org/v2/cookbook/debugging-in-vscode.html
+
+Vue tolling for VS code (extension): https://vuejs.github.io/vetur/
+
 ### Compiles and hot-reloads for development
 ```
 npm run serve
@@ -27,8 +31,5 @@ npm run lint
 
 ### Run your unit tests
 ```
-npm run test:unit
+npm run test
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
