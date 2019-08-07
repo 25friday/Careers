@@ -1,2 +1,2 @@
-# 25Friday.CareerPage.Frontend
-25Friday Career Page 
+# 25Friday.Careers
+25Friday Careers
