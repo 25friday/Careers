@@ -1,30 +1,27 @@
-# carrers
+# 25 carrers Front End
 
-## Project setup
-```
-npm install
-```
+# Project setup
 
-Setup Debugger in VS code: https://vuejs.org/v2/cookbook/debugging-in-vscode.html
+Optional:
 
-Vue tolling for VS code (extension): https://vuejs.github.io/vetur/
+* Setup Debugger in VS code: https://vuejs.org/v2/cookbook/debugging-in-vscode.html
+* Vue tolling for VS code (extension): https://vuejs.github.io/vetur/
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Common run commands:
 
-### Compiles and minifies for production
 ```
-npm run build
+$ npm run serve     # build and run the solution localhost
+$ npm run build     # just build the project into a deployable artifact (dist/)
+$ npm run test      # run the unit tests
+$ npm run lint      # build run the TS lint and static code anylises tools
+$ npm run clean     # delete all local build artifacts (including node_modules/)
 ```
 
-### Run your tests
-```
-npm run test
-```
+Common dependency management commands:
 
-### Lints and fixes files
 ```
-npm run lint
+$ npm install
+$ npm outdated
+$ npm update
+$ npm audit        # find known security vurnerabilities on the current dependency tree
 ```
