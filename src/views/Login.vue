@@ -21,14 +21,11 @@
         },
         methods: {
             login() {
-                firebase.auth().signInWithEmailAndPassword(this.email, this.password).then(
-                    function (user) {
-                        alert("connected");
-                },
-                function(err){
-                        alert("Error " + err.message);
-                }
-                );
+                firebase.auth().signInWithEmailAndPassword(this.email, this.password).then((user) => {
+                        this.$router.push('about');
+                }).catch((err) => {
+                    alert(err.message)
+                })
             }
         }
     }

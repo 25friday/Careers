@@ -12,10 +12,10 @@
 
     export default {
         name: "SignUp",
-        data(){
+        data() {
             return {
                 email: '',
-                password: ''
+                password: '',
             }
         },
         methods: {
