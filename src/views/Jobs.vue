@@ -14,6 +14,12 @@ import DynamicList from '@/components/DynamicList.vue';
   },
 })
 export default class Home extends Vue {
+    /*
+    The items object it is mocked data,
+    it should be replaced by a call to
+    firebase in order to get all the
+    available jobs
+     */
   public items: object = [
                   {
                     id: 1,
