@@ -7,7 +7,7 @@ import firebase from 'firebase';
 Vue.config.productionTip = false;
 
 // Initialize Firebase
-let config = {
+const config = {
   apiKey: "AIzaSyBg9Mzv-KX50nBnt7X77Sx3OWUMXky2qjI",
   authDomain: "friday-careers.firebaseapp.com",
   databaseURL: "https://friday-careers.firebaseio.com",
