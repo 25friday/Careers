@@ -12,7 +12,6 @@
 
 <script>
   import { db } from '../main';
-
   export default {
     name: "About",
     data(){

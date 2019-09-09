@@ -10,8 +10,9 @@
     "clean": "rm -rf dist/ node_modules/"
   },
   "dependencies": {
+    "axios": "^0.18.1",
     "core-js": "^3.2.1",
-    "firebase": "^6.4.2",
+    "firebase": "^6.6.0",
     "vue": "^2.6.10",
     "vue-class-component": "7.1.0",
     "vue-property-decorator": "^8.2.2",
