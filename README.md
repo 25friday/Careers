@@ -1,5 +1,7 @@
 # 25 carrers Front End
 
+[![Continuous Integration](https://github.com/25friday/Careers/workflows/continuous-integration/badge.svg)](https://github.com/25friday/Careers/actions)
+
 # Project setup
 
 Optional:
