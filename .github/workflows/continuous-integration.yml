@@ -3,7 +3,7 @@ on: [push]
 jobs:
   build:
     name: Build
-    runs-on: [ubuntu-latest]    
+    runs-on: ubuntu-latest   
     steps:
       # Print GitHub Actions debug information
       - uses: actions/bin/debug@master
