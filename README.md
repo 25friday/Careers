@@ -7,7 +7,17 @@ Optional:
 * Setup Debugger in VS code: https://vuejs.org/v2/cookbook/debugging-in-vscode.html
 * Vue tolling for VS code (extension): https://vuejs.github.io/vetur/
 
-Common run commands:
+## Installation
+```
+$ npm install
+```
+
+## How to start
+```
+$ npm start
+```
+
+Others Common run commands:
 
 ```
 $ npm run serve     # build and run the solution localhost
