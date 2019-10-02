@@ -8,7 +8,7 @@ jobs:
       # Print GitHub Actions debug information
       - uses: actions/bin/debug@master
 
-      - name: checkout code
+      - name: Code Checkout
         uses: actions/checkout@v1
         with:
           fetch-depth: 1
