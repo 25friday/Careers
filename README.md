@@ -16,13 +16,15 @@ Checkout the source, then:
     $ npm install
     $ npm run start
 
+This will change source code:
+
+    $ npm run lint      # run the TS lint and update the source code to fix issues
 
 Other common commands:
 
     $ npm run serve     # build and run the solution localhost
     $ npm run build     # just build the project into a deployable artifact (dist/)
     $ npm run test      # run the unit tests
-    $ npm run lint      # build run the TS lint and static code anylises tools
     $ npm run clean     # delete all local build artifacts (including node_modules/)
 
 ## Manage dependencies
