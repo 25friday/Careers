@@ -1,0 +1,24 @@
+name: Continuous Integration
+on: [push]
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest   
+    steps:
+      # Print GitHub Actions debug information
+      - uses: actions/bin/debug@master
+
+      # Checkout code
+      - uses: actions/checkout@v1
+        with:
+          fetch-depth: 1  
+
+      # Install Node
+      - name: Set Node.js 10.x
+        uses: actions/setup-node@v1
+        with:
+          version: 10.x
+
+      # Build App
+      - run: npm install && npm run build 
+      
