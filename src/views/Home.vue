@@ -20,14 +20,19 @@
       <p>It's not that we use technology, we breathe technology.</p>
     </div>
 
-    <ImgSlider folder="home-slider" />
+    <div class="grey-bg">
+      <ImgSlider folder="TODO: component that does an image slider from a assest folder path" />
+    </div>
 
-    <div>
+    <div class="grey-bg">
+      <h3 class="section-title orange">Job Openings</h3>
+      <div class="h-bar"></div>
       <JobOpenings />
     </div>
 
     <div>
-      <p>Clients</p>
+      <h3 class="section-title orange">Clients</h3>
+      <div class="h-bar"></div>
       <div>
         <img alt="brainsfirst logo" src="../assets/clients-logos/brainsfirst.png" />
         <img alt="agon logo" src="../assets/clients-logos/agon.png" />
@@ -35,15 +40,15 @@
       </div>
     </div>
 
-    <div>
-      <div>
-        <p>Daily Culture</p>
-      </div>
+    <div class="grey-bg">
+      <h3 class="section-title orange">Daily Culture</h3>
+      <div class="h-bar"></div>
       <InstagramImages />
     </div>
 
-    <div class>
-      <h3>Perks</h3>
+    <div>
+      <h3 class="section-title orange">Perks</h3>
+      <div class="h-bar"></div>
       <ol>
         <li>Daily Breakfast (and snacks throughout the day)</li>
         <li>Health Insurance</li>
@@ -59,28 +64,32 @@
     </div>
 
     <img alt="25 Friday logo" src="../assets/logo-with-text.jpg" />
+    <div style="min-height: 100px"></div>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-import ImgSlider from '@/components/ImgSlider.vue';
-import JobOpenings from '@/components/JobOpenings.vue';
-import InstagramImages from '@/components/InstagramImages.vue';
+import { Component, Vue } from "vue-property-decorator";
+import ImgSlider from "@/components/ImgSlider.vue";
+import JobOpenings from "@/components/JobOpenings.vue";
+import InstagramImages from "@/components/InstagramImages.vue";
 
 @Component({
   components: {
     ImgSlider,
     JobOpenings,
-    InstagramImages,
-  },
+    InstagramImages
+  }
 })
 export default class Home extends Vue {}
 </script>
 
 <style scoped lang="scss">
 .orange {
-  color: orange;
+  color: rgb(234, 133, 35);
+}
+.grey-bg {
+  background: rgba(0, 0, 0, 0.1);
 }
 .title {
   font-size: 120px;
@@ -89,9 +98,19 @@ export default class Home extends Vue {}
   font-weight: bold;
   font-size: 20px;
 }
+.section-title {
+  text-align: left;
+  margin: 40px 0 0;
+  font-weight: 500;
+  font-size: 32px;
+}
+.h-bar {
+  height: 1px;
+  background: rgba(0, 0, 0, 0.1);
+}
 ol {
   columns: 2;
-  margin: 0 0 30px 20px;
+  margin: 20px 0 100px 20px;
   align-items: center;
   text-align: justify;
   li {

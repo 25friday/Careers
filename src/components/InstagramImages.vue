@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h3>Instagram Images</h3>
+    <h3>TODO: component Instagram Images</h3>
   </div>
 </template>
 
