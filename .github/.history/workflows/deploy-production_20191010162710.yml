@@ -1,10 +1,16 @@
-name: Continuous Integration
-on: [push]
+name: Production Deploy
+on:
+  push:
+    branches:
+      - master
 jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
     steps:
+      # Print GitHub Actions debug information
+      - uses: actions/bin/debug@master
+
       - name: Code Checkout
         uses: actions/checkout@v1
         with:
