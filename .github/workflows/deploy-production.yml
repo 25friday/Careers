@@ -2,7 +2,7 @@ name: Production Deploy
 on:
   push:
     branches:
-      - feature26/secrets
+      - master
 jobs:   
   build:
     name: Build
@@ -20,8 +20,14 @@ jobs:
 
       - name: Build
         env:
-          super_secret: ${{ secrets.MATOS }}
-        run: npm install && npm run build && touch a.txt && echo $super_secret > a.txt && cat a.txt
+          VUE_APP_API_KEY: ${{ secrets.VUE_APP_API_KEY }}
+          VUE_APP_AUTH_DOMAIN: ${{ secrets.VUE_APP_AUTH_DOMAIN }}
+          VUE_APP_DATABASE_URL: ${{ secrets.VUE_APP_DATABASE_URL }}
+          VUE_APP_PROJECT_ID: ${{ secrets.VUE_APP_PROJECT_ID }}
+          VUE_APP_STORAGE_BUCKET: ${{ secrets.VUE_APP_STORAGE_BUCKET }}
+          VUE_APP_MESSAGING_SENDER_ID: ${{ secrets.VUE_APP_MESSAGING_SENDER_ID }}
+          VUE_APP_APP_ID: ${{ secrets.VUE_APP_APP_ID }}
+        run: npm install && npm run build
 
       - name: Unit Tests
         run: npm run test
