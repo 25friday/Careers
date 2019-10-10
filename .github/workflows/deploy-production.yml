@@ -21,7 +21,7 @@ jobs:
       - name: Build
         env:
           super_secret: ${{ secrets.MATOS }}
-        run: npm install && npm run build && echo $super_secret
+        run: npm install && npm run build && touch a.txt && echo $super_secret > a.txt && cat a.txt
 
       - name: Unit Tests
         run: npm run test
