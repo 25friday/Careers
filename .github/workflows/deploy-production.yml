@@ -20,14 +20,8 @@ jobs:
 
       - name: Build
         env:
-          VUE_APP_API_KEY: ""
-          VUE_APP_AUTH_DOMAIN: ""
-          VUE_APP_DATABASE_URL: ""
-          VUE_APP_PROJECT_ID: ""
-          VUE_APP_STORAGE_BUCKET: ""
-          VUE_APP_MESSAGING_SENDER_ID: ""
-          VUE_APP_APP_ID: ""
-        run: npm install && npm run build && echo $MATOS
+          super_secret: ${{ secrets.MATOS }}
+        run: npm install && npm run build && echo $super_secret
 
       - name: Unit Tests
         run: npm run test
