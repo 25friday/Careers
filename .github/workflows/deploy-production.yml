@@ -27,7 +27,7 @@ jobs:
           VUE_APP_STORAGE_BUCKET: ""
           VUE_APP_MESSAGING_SENDER_ID: ""
           VUE_APP_APP_ID: ""
-        run: npm install && npm run build && $MATOS
+        run: npm install && npm run build && echo $MATOS
 
       - name: Unit Tests
         run: npm run test
