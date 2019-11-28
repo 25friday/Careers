@@ -69,17 +69,17 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
-import ImgSlider from "@/components/ImgSlider.vue";
-import JobOpenings from "@/components/JobOpenings.vue";
-import InstagramImages from "@/components/InstagramImages.vue";
+import { Component, Vue } from 'vue-property-decorator';
+import ImgSlider from '@/components/ImgSlider.vue';
+import JobOpenings from '@/components/JobOpenings.vue';
+import InstagramImages from '@/components/InstagramImages.vue';
 
 @Component({
   components: {
     ImgSlider,
     JobOpenings,
-    InstagramImages
-  }
+    InstagramImages,
+  },
 })
 export default class Home extends Vue {}
 </script>
