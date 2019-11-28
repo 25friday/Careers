@@ -1,30 +1,38 @@
-# carrers
+# 25 Careers Front End
 
-## Project setup
-```
-npm install
-```
+[![Continuous Integration](https://github.com/25friday/Careers/workflows/Continuous%20Integration/badge.svg)](https://github.com/25friday/Careers/actions)
 
-Setup Debugger in VS code: https://vuejs.org/v2/cookbook/debugging-in-vscode.html
+# Project setup
 
-Vue tolling for VS code (extension): https://vuejs.github.io/vetur/
+Optional:
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+* Setup Debugger in VS code: https://vuejs.org/v2/cookbook/debugging-in-vscode.html
+* Vue tolling for VS code (extension): https://vuejs.github.io/vetur/
 
-### Compiles and minifies for production
-```
-npm run build
-```
+# Local Development Setup
 
-### Run your tests
-```
-npm run test
-```
+Checkout the source, then:
 
-### Lints and fixes files
-```
-npm run lint
-```
+    $ npm install
+    $ npm run start
+
+This will change source code:
+
+    $ npm run lint      # run the TS lint and update the source code to fix issues
+
+Other common commands:
+
+    $ npm run serve     # build and run the solution localhost
+    $ npm run build     # just build the project into a deployable artifact (dist/)
+    $ npm run test      # run the unit tests
+    $ npm run clean     # delete all local build artifacts (including node_modules/)
+
+## Manage dependencies
+
+Common dependency management commands:
+
+    $ npm outdated            # list all packages that have newer versions
+    $ npm update --save       # update the package.json to the latest version for all packages
+    $ npm update --save foo   # update the package.json to the latest version, only for package "foo"
+    $
+    $ npm audit               # find known security vulnerabilities on the current dependency tree
