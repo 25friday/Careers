@@ -13,21 +13,21 @@
 <script>
   import { db } from '../main';
   export default {
-    name: "About",
-    data(){
+    name: 'About',
+    data() {
       return {
         vacancies: []
-      }
+      };
     },
-    created () {
+    created() {
       db.collection('vacancies').orderBy('created_at').onSnapshot((snapshot) => {
           snapshot.forEach((doc) => {
-            this.vacancies.push({ id: doc.id, title: doc.data().title, description: doc.data().description })
-          })
-      })
+            this.vacancies.push({ id: doc.id, title: doc.data().title, description: doc.data().description });
+          });
+      });
     },
     methods: {
 
     }
-  }
+  };
 </script>

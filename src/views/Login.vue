@@ -12,23 +12,23 @@
     import firebase from 'firebase';
 
     export default {
-        name: "Login",
-        data(){
+        name: 'Login',
+        data() {
             return {
                 email: '',
                 password: ''
-            }
+            };
         },
         methods: {
             login() {
                 firebase.auth().signInWithEmailAndPassword(this.email, this.password).then((user) => {
                         this.$router.push('about');
                 }).catch((err) => {
-                    alert(err.message)
-                })
+                    alert(err.message);
+                });
             }
         }
-    }
+    };
 </script>
 
 <style scoped>
